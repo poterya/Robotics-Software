@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Crossref>
+	<Vars>
+	</Vars>
+	<Funcs>
+		<Func Name="FB_Integrator">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Motor.c">
+				<Pos L="19"/>
+				<Pos L="22"/>
+			</File>
+			<File Name="C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Controller.c">
+				<Pos L="18"/>
+			</File>
+		</Func>
+	</Funcs>
+</Crossref>

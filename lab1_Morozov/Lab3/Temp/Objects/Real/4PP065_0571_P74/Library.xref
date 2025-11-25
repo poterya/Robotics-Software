@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0.0?>
+<Crossref Scope="Libraries.Library" Desc="" AppMod="" xmlns="http://br-automation.co.at/AS/Crossreference">
+	<Vars>
+	</Vars>
+	<Consts>
+	</Consts>
+	<Funcs>
+		<Func Name="FB_Integrator" Lib="" Desc="">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Controller.c" Desc="">
+				<Pos L="18" C="2" EP="" EP2="" PS=" Ln:18, Col:2"/>
+			</File>
+			<File Name="C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Motor.c" Desc="">
+				<Pos L="19" C="2" EP="" EP2="" PS=" Ln:19, Col:2"/>
+				<Pos L="22" C="2" EP="" EP2="" PS=" Ln:22, Col:2"/>
+			</File>
+		</Func>
+	</Funcs>
+</Crossref>

@@ -1,0 +1,2 @@
+Library	"$(AS_CPU_PATH)/Library/a.out" -o "$(AS_CPU_PATH)/Library/Library.ox" -T SG4 -r Library   -X "$(AS_CPU_PATH)/Library/Library.xrefox" -G V4.1.2 
+SDCAxisCtr	"$(AS_CPU_PATH)/SDCAxisCtr/a.out" -o "$(AS_CPU_PATH)/SDCAxisCtr/SDCAxisCtr.ox" -T SG4 -r Cyclic1   -X "$(AS_CPU_PATH)/SDCAxisCtr/SDCAxisCtr.xrefox" -G V4.1.2 

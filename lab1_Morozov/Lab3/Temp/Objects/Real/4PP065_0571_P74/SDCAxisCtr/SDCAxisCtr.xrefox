@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<Crossref>
+	<Vars>
+		<Var Name="AxisX_EncIf" Scope="Global" Type="SdcEncIf16_typ">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="23"/>
+				<Pos L="45"/>
+				<Pos L="46"/>
+				<Pos L="61"/>
+			</File>
+		</Var>
+		<Var Name="AxisX_DiDoIf" Scope="Global" Type="SdcDiDoIf_typ">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="26"/>
+				<Pos L="47"/>
+				<Pos L="48"/>
+				<Pos L="62"/>
+				<Pos L="63"/>
+				<Pos L="64"/>
+				<Pos L="65"/>
+				<Pos L="66"/>
+			</File>
+		</Var>
+		<Var Name="AxisX_DrvIf" Scope="Global" Type="SdcDrvIf16_typ">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="24"/>
+				<Pos L="25"/>
+				<Pos L="49"/>
+				<Pos L="67"/>
+			</File>
+		</Var>
+		<Var Name="ncSDC_ENC16" Scope="Global" Type="UINT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="13"/>
+			</File>
+		</Var>
+		<Var Name="AxisX_HW" Scope="Global" Type="SdcHwCfg_typ">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="13"/>
+				<Pos L="14"/>
+				<Pos L="15"/>
+				<Pos L="18"/>
+				<Pos L="19"/>
+				<Pos L="20"/>
+			</File>
+		</Var>
+		<Var Name="ncSDC_DIDO" Scope="Global" Type="UINT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="14"/>
+			</File>
+		</Var>
+		<Var Name="ncSDC_DRVSERVO16" Scope="Global" Type="UINT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="15"/>
+			</File>
+		</Var>
+		<Var Name="fb_controller" Scope="Local" Type="FB_Controller">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="28"/>
+				<Pos L="29"/>
+				<Pos L="30"/>
+				<Pos L="31"/>
+				<Pos L="49"/>
+				<Pos L="51"/>
+				<Pos L="52"/>
+				<Pos L="54"/>
+				<Pos L="56"/>
+			</File>
+		</Var>
+		<Var Name="pwm_period" Scope="Local" Type="UINT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="33"/>
+			</File>
+		</Var>
+		<Var Name="axis_X" Scope="Local" Type="FB_Axis">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="38"/>
+				<Pos L="46"/>
+				<Pos L="47"/>
+				<Pos L="48"/>
+				<Pos L="52"/>
+				<Pos L="56"/>
+			</File>
+		</Var>
+		<Var Name="coil_powered" Scope="Local" Type="BOOL">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="39"/>
+			</File>
+		</Var>
+		<Var Name="coil_pwm_value" Scope="Local" Type="INT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="39"/>
+			</File>
+		</Var>
+		<Var Name="min_task" Scope="Local" Type="INT">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="51"/>
+			</File>
+		</Var>
+	</Vars>
+	<Funcs>
+		<Func Name="strcpy">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="18"/>
+				<Pos L="19"/>
+				<Pos L="20"/>
+			</File>
+		</Func>
+		<Func Name="FB_Axis">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="38"/>
+			</File>
+		</Func>
+		<Func Name="AsIOTimeCyclicStart">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="45"/>
+			</File>
+		</Func>
+		<Func Name="FB_Controller">
+			<File Name="C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c">
+				<Pos L="54"/>
+			</File>
+		</Func>
+	</Funcs>
+</Crossref>

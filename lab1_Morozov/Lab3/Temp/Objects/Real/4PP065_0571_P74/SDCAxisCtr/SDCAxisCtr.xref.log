@@ -1,0 +1,84 @@
+--------------------------------------------
+BR.AS.CrossRefExtender.exe generated LogFile
+Work(): Extend VAR-info
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X/Main.c" -o "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/SDCAxisCtr/Main.xrefo" "-IC:/projects/lab3t/BRlab4/Logical/SDCAxisCtrl_X" "-IC:/projects/lab3t/BRlab4/Temp/Includes/SDCAxisCtrl_X" "-IC:/projects/lab3t/BRlab4/Temp/Includes" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -include "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Add CONST entry  ncSDC_ENC16
+Work(): Delete VAR entry  ncSDC_ENC16
+Work(): Add VAR entry  AxisX_HW.EncIf1_Typ
+Work(): Add VAR entry  AxisX_HW.DiDoIf_Typ
+Work(): Add VAR entry  AxisX_HW.DrvIf_Typ
+Work(): Add VAR entry  AxisX_HW.EncIf1_Name
+Work(): Add VAR entry  AxisX_HW.DrvIf_Name
+Work(): Add VAR entry  AxisX_HW.DiDoIf_Name
+Work(): Add VAR entry  AxisX_DiDoIf.iDriveReady
+Work(): Add VAR entry  AxisX_DiDoIf.iPosHwEnd
+Work(): Add VAR entry  AxisX_DiDoIf.iNegHwEnd
+Work(): Add VAR entry  AxisX_DiDoIf.iLifeCntDriveEnable
+Work(): Add VAR entry  AxisX_DiDoIf.iLifeCntDriveReady
+Work(): Add VAR entry  AxisX_DiDoIf.iLifeCntNegHwEnd
+Work(): Add VAR entry  AxisX_DiDoIf.iLifeCntPosHwEnd
+Work(): Add VAR entry  AxisX_DiDoIf.iLifeCntReference
+Work(): Add VAR entry  axis_X.counter
+Work(): Add VAR entry  axis_X.endswitch_b_reached
+Work(): Add VAR entry  axis_X.endswitch_a_reached
+Work(): Add VAR entry  axis_X.speed
+Work(): Add VAR entry  axis_X.pwm_value
+Work(): Add CONST entry  ncSDC_DIDO
+Work(): Delete VAR entry  ncSDC_DIDO
+Work(): Add VAR entry  AxisX_DrvIf.iDrvOK
+Work(): Add VAR entry  AxisX_DrvIf.iStatusEnable
+Work(): Add VAR entry  AxisX_DrvIf.oSetPos
+Work(): Add VAR entry  AxisX_DrvIf.iLifeCnt
+Work(): Add VAR entry  AxisX_EncIf.iEncOK
+Work(): Add VAR entry  AxisX_EncIf.iActTime
+Work(): Add VAR entry  AxisX_EncIf.iActPos
+Work(): Add VAR entry  AxisX_EncIf.iLifeCnt
+Work(): Add CONST entry  ncSDC_DRVSERVO16
+Work(): Delete VAR entry  ncSDC_DRVSERVO16
+Work(): Add VAR entry  fb_controller.dt
+Work(): Add VAR entry  fb_controller.k_i
+Work(): Add VAR entry  fb_controller.k_p
+Work(): Add VAR entry  fb_controller.max_abs_value
+Work(): Add VAR entry  fb_controller.in
+Work(): Add VAR entry  fb_controller.out
+Work(): Delete VAR entry  AxisX_HW
+Work(): Delete VAR entry  AxisX_DiDoIf
+Work(): Delete VAR entry  AxisX_DrvIf
+Work(): Delete VAR entry  AxisX_EncIf
+Work(): Insert VAR entry  fb_controller.k_i
+Work(): Insert VAR entry  AxisX_EncIf.iActPos
+Work(): Insert VAR entry  fb_controller.dt
+Work(): Insert VAR entry  axis_X.speed
+Work(): Insert VAR entry  AxisX_HW.DrvIf_Name
+Work(): Insert VAR entry  AxisX_DiDoIf.iDriveReady
+Work(): Insert VAR entry  fb_controller.max_abs_value
+Work(): Insert VAR entry  AxisX_DrvIf.iLifeCnt
+Work(): Insert VAR entry  axis_X.pwm_value
+Work(): Insert VAR entry  AxisX_DiDoIf.iLifeCntNegHwEnd
+Work(): Insert VAR entry  AxisX_DiDoIf.iLifeCntDriveReady
+Work(): Insert VAR entry  AxisX_DiDoIf.iLifeCntDriveEnable
+Work(): Insert VAR entry  AxisX_HW.EncIf1_Name
+Work(): Insert VAR entry  AxisX_DiDoIf.iLifeCntReference
+Work(): Insert VAR entry  AxisX_DiDoIf.iPosHwEnd
+Work(): Insert VAR entry  AxisX_DrvIf.iStatusEnable
+Work(): Insert VAR entry  AxisX_DrvIf.iDrvOK
+Work(): Insert VAR entry  AxisX_HW.DiDoIf_Typ
+Work(): Insert VAR entry  AxisX_HW.EncIf1_Typ
+Work(): Insert VAR entry  fb_controller.in
+Work(): Insert VAR entry  fb_controller.k_p
+Work(): Insert VAR entry  AxisX_DiDoIf.iNegHwEnd
+Work(): Insert VAR entry  AxisX_HW.DiDoIf_Name
+Work(): Insert VAR entry  AxisX_EncIf.iLifeCnt
+Work(): Insert VAR entry  AxisX_EncIf.iEncOK
+Work(): Insert VAR entry  axis_X.endswitch_a_reached
+Work(): Insert VAR entry  axis_X.endswitch_b_reached
+Work(): Insert VAR entry  AxisX_DrvIf.oSetPos
+Work(): Insert VAR entry  axis_X.counter
+Work(): Insert VAR entry  fb_controller.out
+Work(): Insert VAR entry  AxisX_EncIf.iActTime
+Work(): Insert VAR entry  AxisX_HW.DrvIf_Typ
+Work(): Insert VAR entry  AxisX_DiDoIf.iLifeCntPosHwEnd
+Work(): Extend CONST-info
+Work(): Extend FUNC-info
+Work(): Write output file

@@ -1,0 +1,10 @@
+--------------------------------------------
+BR.AS.CrossRefExtender.exe generated LogFile
+Work(): Extend VAR-info
+Work(): Extend CONST-info
+Work(): Extend FUNC-info
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Controller.c" -o "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/Library/FB_Controller.xrefo" "-IC:/projects/lab3t/BRlab4/Logical/Libraries/Library" "-IC:/projects/lab3t/BRlab4/Temp/Includes/Libraries/Library" "-IC:/projects/lab3t/BRlab4/Temp/Includes" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -D_REPLACE_CONST -include "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Running SymbolInfo.exe
+"C:/BrAutomation/AS42/AS/GnuInst/Tools/SymbolInfo.exe" "C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Motor.c" -o "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/Library/FB_Motor.xrefo" "-IC:/projects/lab3t/BRlab4/Logical/Libraries/Library" "-IC:/projects/lab3t/BRlab4/Temp/Includes/Libraries/Library" "-IC:/projects/lab3t/BRlab4/Temp/Includes" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/i386-elf/include" "-IC:/BrAutomation/AS42/AS/GnuInst/V2.95.3/lib/gcc-lib/i386-elf/2.95.3/include" -D_SG4 -D_DEFAULT_INCLUDES -Di386 -D__i386 -D__i386__ -D_REPLACE_CONST -include "C:/projects/lab3t/BRlab4/Temp/Objects/Real/4PP065_0571_P74/Libraries.h" -include "C:/BrAutomation/AS42/AS/GnuInst/Tools/include/plc.h"
+Work(): Write output file

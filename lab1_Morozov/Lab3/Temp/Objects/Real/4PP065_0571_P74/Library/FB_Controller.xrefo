@@ -1,0 +1,95 @@
+
+FILE: C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Controller.c
+
+    12:6   g v DEF  S FB_Controller                    
+
+FILE: C:/projects/lab3t/BRlab4/Temp/Includes/Library.h
+
+    44:16  g v DEF  S FB_Controller                    
+    18:16  g v DEF  S FB_Integrator                    
+
+FILE: C:/projects/lab3t/BRlab4/Logical/Libraries/Library/FB_Controller.c
+
+    12:40  l v DEF  S inst                             
+    14:7   l v DEF  S a                                
+    14:7   l v W    S a                                
+    14:11  l v RW   S inst                             
+    14:15  g v R    M FB_Controller.in                 
+    14:22  l v RW   S inst                             
+    14:26  g v R    M FB_Controller.k_p                
+    15:7   l v DEF  S b                                
+    15:7   l v W    S b                                
+    15:11  l v RW   S inst                             
+    15:15  g v R    M FB_Controller.in                 
+    15:22  l v RW   S inst                             
+    15:26  g v R    M FB_Controller.k_i                
+    16:2   l v RW   S inst                             
+    16:6   g v W    M FB_Controller.integrator         
+    16:18  g v W    M FB_Integrator.dt                 
+    16:24  l v RW   S inst                             
+    16:28  g v R    M FB_Controller.dt                 
+    17:2   l v RW   S inst                             
+    17:6   g v W    M FB_Controller.integrator         
+    17:18  g v W    M FB_Integrator.in                 
+    17:24  l v R    S b                                
+    18:2   g v RW   S FB_Integrator                    
+    18:17  l v R    S inst                             
+    18:21  g v RW   M FB_Controller.integrator         
+    19:2   l v W    S a                                
+    19:6   l v R    S a                                
+    19:10  l v RW   S inst                             
+    19:14  g v R    M FB_Controller.max_abs_value      
+    19:32  l v RW   S inst                             
+    19:36  g v R    M FB_Controller.max_abs_value      
+    19:54  l v R    S a                                
+    20:2   l v W    S a                                
+    20:6   l v R    S a                                
+    20:11  l v RW   S inst                             
+    20:15  g v R    M FB_Controller.max_abs_value      
+    20:34  l v RW   S inst                             
+    20:38  g v R    M FB_Controller.max_abs_value      
+    20:56  l v R    S a                                
+    21:2   l v RW   S inst                             
+    21:6   g v W    M FB_Controller.sum                
+    21:14  l v R    S a                                
+    21:18  l v RW   S inst                             
+    21:22  g v R    M FB_Controller.integrator         
+    21:34  g v R    M FB_Integrator.out                
+    22:2   l v RW   S inst                             
+    22:6   g v W    M FB_Controller.out                
+    22:14  l v RW   S inst                             
+    22:18  g v R    M FB_Controller.sum                
+    23:2   l v RW   S inst                             
+    23:6   g v W    M FB_Controller.out                
+    23:14  l v RW   S inst                             
+    23:18  g v R    M FB_Controller.out                
+    23:26  l v RW   S inst                             
+    23:30  g v R    M FB_Controller.max_abs_value      
+    23:48  l v RW   S inst                             
+    23:52  g v R    M FB_Controller.max_abs_value      
+    23:70  l v RW   S inst                             
+    23:74  g v R    M FB_Controller.out                
+    24:2   l v RW   S inst                             
+    24:6   g v W    M FB_Controller.out                
+    24:14  l v RW   S inst                             
+    24:18  g v R    M FB_Controller.out                
+    24:27  l v RW   S inst                             
+    24:31  g v R    M FB_Controller.max_abs_value      
+    24:50  l v RW   S inst                             
+    24:54  g v R    M FB_Controller.max_abs_value      
+    24:72  l v RW   S inst                             
+    24:76  g v R    M FB_Controller.out                
+    25:2   l v RW   S inst                             
+    25:6   g v W    M FB_Controller.last_sum           
+    25:20  l v RW   S inst                             
+    25:24  g v R    M FB_Controller.out                
+    25:32  l v RW   S inst                             
+    25:36  g v R    M FB_Controller.sum                
+    26:2   l v RW   S inst                             
+    26:6   g v W    M FB_Controller.integrator         
+    26:18  g v W    M FB_Integrator.state              
+    26:27  l v RW   S inst                             
+    26:31  g v R    M FB_Controller.integrator         
+    26:43  g v R    M FB_Integrator.state              
+    26:52  l v RW   S inst                             
+    26:56  g v R    M FB_Controller.last_sum           
