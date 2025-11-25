@@ -1,0 +1,304 @@
+void DriveStateMachine(struct DriveStateMachine* inst)
+{
+	/*TODO: Add your code here*/
+	UINT mask = inst->state & 0x6f;
+	if(!inst->enable)
+	{
+		inst->command = CMD_SHUTDOWN;
+	}
+	else
+	{
+		switch (mask)
+		{
+			case STATE_DISABLED:			
+				inst->command = CMD_SHUTDOWN;
+				break;
+			
+			case STATE_READY:
+				inst->command = CMD_ENABLED;
+				break;
+			
+			case STATE_SWITCHED_ON:
+				inst->command = CMD_SWITCHED_ON;
+				break;
+		}
+	}	
+
+}
+
+
+
+
+
+
+
+void DoorStateMachine(struct DoorStateMachine* inst)
+{
+	/*TODO: Add your code here*/
+	switch(inst->state)
+	{
+		case ST_INIT:
+			{
+				if(inst->sw1==0 && inst->sw2==0 && inst->sw3==0 && inst->sw4==0)
+					inst->state=ST_UNKNOWN;
+				break;
+			}
+		case ST_UNKNOWN:
+			{
+				if(inst->direction==0 && inst->sw1!=inst->swo1)
+					inst->state=ST_CLOSE;
+				if(inst->direction==1 && inst->sw1!=inst->swo1)
+					inst->state=ST_NEG;
+				if(inst->direction==1 && inst->sw2!=inst->swo2)
+					inst->state=ST_ACC_NEG;
+				if(inst->direction==1 && inst->sw3!=inst->swo3)
+					inst->state=ST_DEC_NEG;
+				
+				if(inst->direction==1 && inst->sw4!=inst->swo4)
+					inst->state=ST_OPEN;
+				if(inst->direction==0 && inst->sw4!=inst->swo4)
+					inst->state=ST_POS;
+				if(inst->direction==0 && inst->sw3!=inst->swo3)
+					inst->state=ST_ACC_POS;
+				if(inst->direction==0 && inst->sw2!=inst->swo2)
+					inst->state=ST_DEC_POS;
+				break;
+			}
+		
+		
+		
+		
+		
+		
+		
+		case ST_CLOSE:
+			{
+				inst->speed = 0;
+				if(inst->direction==1)
+					inst->state=ST_NEG;
+				break;
+			}
+		case ST_NEG:
+			{
+				inst->speed = -200;
+				if(inst->direction==1 && inst->sw2!=inst->swo2)
+					inst->state=ST_ACC_NEG;
+				if(inst->direction==0)
+					inst->state=ST_DEC_POS;
+				break;
+				
+			}
+		case ST_ACC_NEG:
+			{
+				inst->speed = -600;
+				if(inst->direction==1 && inst->sw3!=inst->swo3)
+					inst->state=ST_DEC_NEG;
+				if(inst->direction==0)
+					inst->state=ST_ACC_POS;
+				break;
+			}
+		case ST_DEC_NEG:
+			{
+				inst->speed = -200;
+				if(inst->direction==1 && inst->sw4!=inst->swo4)
+					inst->state=ST_OPEN;
+				if(inst->direction==0)
+					inst->state=ST_POS;
+				break;
+			}
+		
+		
+		
+		
+		
+		
+		
+		case ST_OPEN:
+			{
+				inst->speed = 0;
+				if(inst->direction==0)
+					inst->state=ST_POS;
+				break;
+			}
+		case ST_POS:
+			{
+				inst->speed = 200;
+				if(inst->direction==0 && inst->sw3!=inst->swo3)
+					inst->state=ST_ACC_POS;
+				if(inst->direction==1)
+					inst->state=ST_DEC_NEG;
+				break;
+			}
+		case ST_ACC_POS:
+			{
+				inst->speed = 600;
+				if(inst->direction==0 && inst->sw2!=inst->swo2)
+					inst->state=ST_DEC_POS;
+				if(inst->direction==1)
+					inst->state=ST_ACC_NEG;
+				break;
+			}
+		case ST_DEC_POS:
+			{
+				inst->speed = 200;
+				if(inst->direction==0 && inst->sw1!=inst->swo1)
+					inst->state=ST_CLOSE;
+				if(inst->direction==1)
+					inst->state=ST_NEG;
+
+				break;
+			}
+	}
+	
+	inst->swo1=inst->sw1;
+	inst->swo2=inst->sw2;
+	inst->swo3=inst->sw3;
+	inst->swo4=inst->sw4;
+}
+
+
+
+
+
+
+
+
+void LedStateMachine(struct LedStateMachine* inst)
+{
+	switch(inst->state)
+	{
+		case ST_INIT:
+			{
+				
+				break;
+			}
+		
+		case ST_UNKNOWN:
+			{
+				if(inst->timer%10==9)
+				{
+					inst->led1=!inst->led1;
+					inst->led2=!inst->led2;
+					inst->led3=!inst->led3;
+					inst->led4=!inst->led4;
+				}
+				break;
+			}
+		
+		
+		
+		
+		
+		
+		
+		case ST_CLOSE:
+			{
+				inst->led1=1;
+				inst->led2=1;
+				inst->led3=1;
+				inst->led4=1;
+				break;
+			}
+		case ST_NEG:
+			{
+				inst->led1=0;
+				if(inst->timer%10==9)
+					inst->led2=!inst->led2;
+				inst->led3=1;
+				inst->led4=1;
+				break;
+			}
+		case ST_ACC_NEG:
+			{
+				inst->led1=0;
+				inst->led2=0;
+				if(inst->timer%5==4)
+					inst->led3=!inst->led3;
+				inst->led4=1;
+				break;
+			}
+		case ST_DEC_NEG:
+			{
+				inst->led1=0;
+				inst->led2=0;
+				inst->led3=0;
+				if(inst->timer%10==9)
+					inst->led4=!inst->led4;
+				break;
+			}
+		
+		
+		
+		
+		
+		
+		
+		case ST_OPEN:
+			{
+				inst->led1=0;
+				inst->led2=0;
+				inst->led3=0;
+				inst->led4=0;
+				break;
+			}
+		case ST_POS:
+			{
+				inst->led1=0;
+				inst->led2=0;
+				if(inst->timer%10==9)
+					inst->led3=!inst->led3;
+				inst->led4=1;
+				break;
+			}
+		case ST_ACC_POS:
+			{
+				inst->led1=0;
+				if(inst->timer%5==4)
+					inst->led2=!inst->led2;
+				inst->led3=1;
+				inst->led4=1;
+				break;
+			}
+		case ST_DEC_POS:
+			{
+				if(inst->timer%10==9)
+					inst->led1=!inst->led1;
+				inst->led2=1;
+				inst->led3=1;
+				inst->led4=1;
+				break;
+			}
+	}
+	inst->timer++;
+}
+
+
+
+
+
+
+
+void _INIT ProgramInit(void)
+{
+	driveSM.enable=1;
+}
+
+
+
+
+
+
+void _CYCLIC ProgramCyclic(void)
+{
+	DoorStateMachine(&doorSM);
+	driveSM.speed = doorSM.speed;
+	DriveStateMachine(&driveSM);
+	ledSM.state = doorSM.state;
+	LedStateMachine(&ledSM);
+}
+
+
+
+
+
+
